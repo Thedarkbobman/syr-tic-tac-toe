@@ -1,0 +1,25 @@
+site_name: Syr
+repo_url: "https://github.com/dmikey/syr"
+copyright: "Syr is licensed under the <a href='https://github.com/dmikey/syr/blob/master/LICENSE'>MIT license"
+theme_dir: ../cinder/cinder
+site_favicon: images/favicon.ico
+site_dir: docs
+docs_dir: docsmd
+google_analytics: ['UA-111449876-1', 'auto']
+copyright: Copyright Derek M. Anderson , Licensed under MIT
+include_next_prev: false
+extra_css:
+    - css/extra.css
+pages:
+    - Home: index.md
+    - 1.3.4-alpha: release.md
+    - Docs:
+      - API: api.md
+      - CLI: cli.md
+      - Getting Started: getting_started.md
+      - Debugging: debugging.md
+    - Community: community.md
+    - Blog: blog.md
+markdown_extensions:
+  - markdown_fenced_code_tabs:
+      single_block_as_tab: false

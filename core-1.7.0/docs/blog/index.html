@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="shortcut icon" href="../images/favicon.ico">
+
+    <title>Blog - Syr</title>
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.4.0.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/hack-2.018.min.css">
+    <link href='../css/googleapi-fonts.css' rel='stylesheet' type='text/css'>
+    <link href='../css/googleapi-fonts-2.css' rel='stylesheet' type='text/css'>
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+
+
+    <link href="../css/extra.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="../js/html5shiv-3.7.0.js"></script>
+            <script src="../js/respond.min-1.3.0.js"></script>
+        <![endif]-->
+
+    <script src="../js/webfont-1.5.18.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-111449876-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" style="padding:0" href=".."><img src="/images/syr_piggie.png" height=45> Syr</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                    
+                        
+                            <li >
+                                <a href="..">Home</a>
+                            </li>
+                        
+                    
+                
+                    
+                        
+                            <li >
+                                <a href="../release/">1.3.4-alpha</a>
+                            </li>
+                        
+                    
+                
+                    
+                        
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                
+                                    
+<li >
+    <a href="../api/">API</a>
+</li>
+
+                                
+                                    
+<li >
+    <a href="../cli/">CLI</a>
+</li>
+
+                                
+                                    
+<li >
+    <a href="../getting_started/">Getting Started</a>
+</li>
+
+                                
+                                    
+<li >
+    <a href="../debugging/">Debugging</a>
+</li>
+
+                                
+                                </ul>
+                            </li>
+                        
+                    
+                
+                    
+                        
+                            <li >
+                                <a href="../community/">Community</a>
+                            </li>
+                        
+                    
+                
+                    
+                        
+                            <li class="active">
+                                <a href="./">Blog</a>
+                            </li>
+                        
+                    
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/dmikey/syr">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="first-level active"><a href="#syr-on-the-inside-how-syr-renders-part-1">Syr On The Inside, How Syr Renders Part 1</a></li>
+        
+    
+        <li class="first-level "><a href="#why-react-native-didnt-fit-well">Why React-Native Didn't Fit Well</a></li>
+        
+    
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1>Syr Blog</h1>
+
+<p><br/></p>
+<h2 id="syr-on-the-inside-how-syr-renders-part-1">Syr On The Inside, How Syr Renders Part 1</h2>
+<p>A Deeper Dive into how Syr renders and constructs instances. Syr uses a <code>Virtual-DOM</code> like structure. This is the <code>Instance-Tree</code> for the application.</p>
+<p>When using Syr, a <code>Component</code> is defined. This base <code>Component</code> is then constructed at <code>run-time</code> and represents the application for the entirety of its existence inside the <code>Guest</code> system. We transport messages with this structure to the <code>Host</code> system, where rendering is setup.</p>
+<p>A basic component defined in Syr.</p>
+<pre><code  class="javascript">class MyComponent extends Component {
+    render() {
+        return &lt;View&gt;Hello World&lt;/View&gt;;
+    }
+}
+</code></pre>
+
+<p>Since JavaScript constructors are sugared function constructors we end up with an object with a <code>render</code> function attached that will return an AST structure.</p>
+<h3>What about the JSX?</h3>
+
+<p>If you're not familiar with <code>JSX</code>, a quick recap is that it is a way for us to represent JavaScript <code>Classes</code> in an elegant composition based manner.</p>
+<p>Syr ships with a <code>JSX</code> transform for <code>Babel</code>. We've forked this implementation from <code>babel-plugin-transform-jsx</code> by Caleb Meredith. One feature added is <code>UUID</code> at transpile time. We leverage this to recompute state without needing to diff a tree and transport those changes to the Host system.</p>
+<p>Syr transpiles <code>JSX</code> directly into an AST tree. Following is an example of what JSX looks like, and what the corresponding tree looks like after going through <code>Babel</code>.</p>
+<pre><code  class="javascript">&lt;View&gt;
+    &lt;Text&gt;Hello World&lt;/Text&gt;
+&lt;/View&gt;
+</code></pre>
+
+<p>Converts into</p>
+<pre><code  class="javascript">{
+    elementName: function(), // instanceof View
+    attributes: {},
+    children: [
+        {
+            elementName: function(), // instanceof Text
+            attributes: {},
+            children: []
+        }
+    ]
+}
+</code></pre>
+
+<h3>We have an AST Tree now what?</h3>
+
+<p>When the application is parsed and loaded, it sits idle until the developer executes the <code>Render</code> method.</p>
+<pre><code  class="javascript">Render(MyComponent);
+</code></pre>
+
+<p>This method takes the AST from the component and creates instances of the classes for the tree. It then uses the <code>JavaScript to Native Bridge</code> to send messages containing the UI structure. </p>
+<p>Syr's <code>Host</code> Bridge implementations receive the AST Tree representing the UI. The Bridge sends this tree to the Raster, where the elements are constructed on the <code>Host</code> environment, and cached against the <code>UUID</code> for later state control. </p>
+<p>The <code>Host</code> environment attaches these controls to a <code>RootView</code>, and once complete sends a message back to the <code>Guest</code> environment, informing it of the <code>UUID</code> which was constructed and rendered, and kicks off the <code>componentDidMount</code> lifecycle event.</p>
+<p>The <code>Host</code> environment and the <code>Guest</code> environment exchange a series of messages that continue while the application is executing. We'll continue to break those Classes down in future posts, stay tuned!</p>
+<p>Want to contribute? Head over to our <a href="https://github.com/dmikey/syr/issues" target="_new">issues</a> page, and grab one to work on today! Any contribution welcome!</p>
+<p><br/>
+<i>Written By <a href="http://www.twitter.com/dmikeyanderson" target="_new">Derek</a> on January 5, 2018</i>
+<br/><br/><hr/><br/></p>
+<h2 id="why-react-native-didnt-fit-well">Why React-Native Didn't Fit Well</h2>
+<p>Keeping a developer journal is something that I've been meaning to keep up with. But building the library and framework has been an amazing chore, and entertaining task at the same time! I thought it would be good to keep documenting the progress and the work that has been done to make something like Syr.</p>
+<p>This project originated at PayPal. We originally had set out to write a new experience using the beloved React-Native. We iterated through several versions of React Native. From the early Teens to the late Forties. We came to the conclusion that as much as we really liked the ecosystem, the platform was not where we needed.</p>
+<p>Ultimately we wanted create an SDK for Native applications. We had hoped to leverage React Native to drive multi-platform, javascript developer support, live updates, and more. While React Native had a bunch of upsides, it hadn't been created for our use case. We were trying to fit our feet into the wrong shoes.</p>
+<p>Among the issues we ran into, a few really big ones were in our way. Size, trying to ship an SDK that is over 15mb to mobile platforms, this is generally a no go. Distribution, over time React Native hasn't had stellar support for integrating into existing applications, the surface area of the number of static libraries really put the hurt on our plans to send out a complete SDK.</p>
+<p>With these pain points in mind, I set out to create Syr. An alternative, that would have a wildly different approach, while maintaining a similar set of principals. Over the coming months, I'll start to detail the decisions, and progress that was made with the library through more blog posts!</p>
+<p><br/>
+<i>Written By <a href="http://www.twitter.com/dmikeyanderson" target="_new">Derek</a> on December 19, 2017</i></p></div>
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>Copyright Derek M. Anderson , Licensed under MIT<br></small>
+        
+        <small>Built with 🍕 in San Jose California.</p></small>
+    </footer>
+
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '..';
+    </script>
+    <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+    <script src="../js/base.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>

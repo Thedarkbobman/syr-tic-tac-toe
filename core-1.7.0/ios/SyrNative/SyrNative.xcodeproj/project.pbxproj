@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42A98E212050634900392721 /* SyrSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A98E202050634900392721 /* SyrSwitch.m */; };
+		69AABEBD2050774C00433CAE /* SyrHapticHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 69AABEBC2050774C00433CAE /* SyrHapticHelper.m */; };
+		69AABEC02050BDFD00433CAE /* SyrAlertDialogue.m in Sources */ = {isa = PBXBuildFile; fileRef = 69AABEBF2050BDFD00433CAE /* SyrAlertDialogue.m */; };
+		69AABEC22050C57600433CAE /* SyrViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 69AABEC12050C57600433CAE /* SyrViewHandler.m */; };
+		D229B6FC1FD12C3D004D651B /* SyrOpacityAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D229B6FA1FD12C3D004D651B /* SyrOpacityAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D229B6FD1FD12C3D004D651B /* SyrOpacityAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D229B6FB1FD12C3D004D651B /* SyrOpacityAnimation.m */; };
+		D229B7001FD12C5D004D651B /* SyrXYAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D229B6FE1FD12C5D004D651B /* SyrXYAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D229B7011FD12C5D004D651B /* SyrXYAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D229B6FF1FD12C5D004D651B /* SyrXYAnimation.m */; };
+		D229B7041FD12C77004D651B /* SyrHeightWidthAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D229B7021FD12C77004D651B /* SyrHeightWidthAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D229B7051FD12C77004D651B /* SyrHeightWidthAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D229B7031FD12C77004D651B /* SyrHeightWidthAnimation.m */; };
+		D229B7081FD12C99004D651B /* SyrRotationAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D229B7061FD12C99004D651B /* SyrRotationAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D229B7091FD12C99004D651B /* SyrRotationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D229B7071FD12C99004D651B /* SyrRotationAnimation.m */; };
+		D229B70C1FD21352004D651B /* SyrAnimationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D229B70A1FD21352004D651B /* SyrAnimationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D229B70D1FD21352004D651B /* SyrAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D229B70B1FD21352004D651B /* SyrAnimationDelegate.m */; };
+		D24A90611F86C2BF003DAD64 /* SyrBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = D24A905F1F86C2BF003DAD64 /* SyrBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D24A90621F86C2BF003DAD64 /* SyrBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D24A90601F86C2BF003DAD64 /* SyrBridge.m */; };
+		D24A90651F86C841003DAD64 /* SyrRootView.h in Headers */ = {isa = PBXBuildFile; fileRef = D24A90631F86C841003DAD64 /* SyrRootView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D24A90661F86C841003DAD64 /* SyrRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24A90641F86C841003DAD64 /* SyrRootView.m */; };
+		D25B49831FF6BEAE0063E878 /* SyrNativeUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25B49821FF6BEAE0063E878 /* SyrNativeUnitTests.m */; };
+		D25B49851FF6BEAE0063E878 /* SyrNative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D7E0301F0F672D0039C3A9 /* SyrNative.framework */; };
+		D266C47B1F9AAD0700BB0A90 /* SyrComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = D266C4791F9AAD0700BB0A90 /* SyrComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D266C47C1F9AAD0700BB0A90 /* SyrComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = D266C47A1F9AAD0700BB0A90 /* SyrComponent.m */; };
+		D266C47F1F9AAD2000BB0A90 /* SyrText.h in Headers */ = {isa = PBXBuildFile; fileRef = D266C47D1F9AAD2000BB0A90 /* SyrText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D266C4801F9AAD2000BB0A90 /* SyrText.m in Sources */ = {isa = PBXBuildFile; fileRef = D266C47E1F9AAD2000BB0A90 /* SyrText.m */; };
+		D266C4961F9AB65200BB0A90 /* SyrImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D266C4941F9AB65200BB0A90 /* SyrImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D266C4971F9AB65200BB0A90 /* SyrImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D266C4951F9AB65200BB0A90 /* SyrImage.m */; };
+		D266C49A1F9ABAE400BB0A90 /* SyrButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D266C4981F9ABAE400BB0A90 /* SyrButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D266C49B1F9ABAE400BB0A90 /* SyrButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D266C4991F9ABAE400BB0A90 /* SyrButton.m */; };
+		D266C49E1F9ABE4E00BB0A90 /* SyrAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = D266C49C1F9ABE4E00BB0A90 /* SyrAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D266C49F1F9ABE4E00BB0A90 /* SyrAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D266C49D1F9ABE4E00BB0A90 /* SyrAnimator.m */; };
+		D266C4A71F9B275E00BB0A90 /* SyrAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D266C4A51F9B275E00BB0A90 /* SyrAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D266C4A81F9B275E00BB0A90 /* SyrAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = D266C4A61F9B275E00BB0A90 /* SyrAnimatedView.m */; };
+		D271B2A91FFED873004603B4 /* SyrInfoBox.h in Headers */ = {isa = PBXBuildFile; fileRef = D271B2A71FFED873004603B4 /* SyrInfoBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D271B2AA1FFED873004603B4 /* SyrInfoBox.m in Sources */ = {isa = PBXBuildFile; fileRef = D271B2A81FFED873004603B4 /* SyrInfoBox.m */; };
+		D2968146202AC64F005EE04C /* SyrNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D2968144202AC64F005EE04C /* SyrNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2968147202AC64F005EE04C /* SyrNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D2968145202AC64F005EE04C /* SyrNetworking.m */; };
+		D29AD66D1FA176DD00DE7CF0 /* SyrNative.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D29AD66C1FA176DD00DE7CF0 /* SyrNative.bundle */; };
+		D29AD6A11FA536D500DE7CF0 /* SyrScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = D29AD69F1FA536D500DE7CF0 /* SyrScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D29AD6A21FA536D500DE7CF0 /* SyrScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AD6A01FA536D500DE7CF0 /* SyrScrollView.m */; };
+		D2B1F56B1FE349BF004A42EF /* SyrBundleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B1F5691FE349BF004A42EF /* SyrBundleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2B1F56C1FE349BF004A42EF /* SyrBundleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B1F56A1FE349BF004A42EF /* SyrBundleManager.m */; };
+		D2B1F56F1FE34B17004A42EF /* SyrStyler.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B1F56D1FE34B17004A42EF /* SyrStyler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2B1F5701FE34B17004A42EF /* SyrStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B1F56E1FE34B17004A42EF /* SyrStyler.m */; };
+		D2B1F5731FE499B1004A42EF /* SyrTouchableOpacity.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B1F5711FE499B1004A42EF /* SyrTouchableOpacity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2B1F5741FE499B1004A42EF /* SyrTouchableOpacity.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B1F5721FE499B1004A42EF /* SyrTouchableOpacity.m */; };
+		D2CE4DFB200E8269002B7B40 /* SyrAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D2CE4DF9200E8269002B7B40 /* SyrAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2CE4DFC200E8269002B7B40 /* SyrAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CE4DFA200E8269002B7B40 /* SyrAnimatedImage.m */; };
+		D2CE4DFF200E8365002B7B40 /* SyrAnimatedText.h in Headers */ = {isa = PBXBuildFile; fileRef = D2CE4DFD200E8365002B7B40 /* SyrAnimatedText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2CE4E00200E8365002B7B40 /* SyrAnimatedText.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CE4DFE200E8365002B7B40 /* SyrAnimatedText.m */; };
+		D2D3122A1F9520AF008A9CCC /* SyrEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D312281F9520AF008A9CCC /* SyrEventHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2D3122B1F9520AF008A9CCC /* SyrEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D312291F9520AF008A9CCC /* SyrEventHandler.m */; };
+		D2D3122E1F955D18008A9CCC /* SyrView.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D3122C1F955D18008A9CCC /* SyrView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2D3122F1F955D18008A9CCC /* SyrView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D3122D1F955D18008A9CCC /* SyrView.m */; };
+		D2D7E0351F0F672D0039C3A9 /* SyrNative.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D7E0331F0F672D0039C3A9 /* SyrNative.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2D7E06A1F0F69050039C3A9 /* SyrCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D7E0681F0F69050039C3A9 /* SyrCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2D7E06B1F0F69050039C3A9 /* SyrCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D7E0691F0F69050039C3A9 /* SyrCore.m */; };
+		D2D7E07E1F11E7DD0039C3A9 /* SyrRaster.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D7E07C1F11E7DD0039C3A9 /* SyrRaster.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2D7E07F1F11E7DD0039C3A9 /* SyrRaster.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D7E07D1F11E7DD0039C3A9 /* SyrRaster.m */; };
+		D2DE8FF71FBF608D00EEF358 /* SyrLinearGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = D2DE8FF51FBF608D00EEF358 /* SyrLinearGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2DE8FF81FBF608D00EEF358 /* SyrLinearGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DE8FF61FBF608D00EEF358 /* SyrLinearGradient.m */; };
+		D2DE8FFB1FC0E46B00EEF358 /* SyrStackView.h in Headers */ = {isa = PBXBuildFile; fileRef = D2DE8FF91FC0E46B00EEF358 /* SyrStackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2DE8FFC1FC0E46B00EEF358 /* SyrStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DE8FFA1FC0E46B00EEF358 /* SyrStackView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D25B49861FF6BEAE0063E878 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2D7E0271F0F672D0039C3A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2D7E02F1F0F672D0039C3A9;
+			remoteInfo = SyrNative;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42A98E1F2050632F00392721 /* SyrSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrSwitch.h; sourceTree = "<group>"; };
+		42A98E202050634900392721 /* SyrSwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrSwitch.m; sourceTree = "<group>"; };
+		69AABEBB2050772200433CAE /* SyrHapticHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrHapticHelper.h; sourceTree = "<group>"; };
+		69AABEBC2050774C00433CAE /* SyrHapticHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrHapticHelper.m; sourceTree = "<group>"; };
+		69AABEBE2050BDD400433CAE /* SyrAlertDialogue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrAlertDialogue.h; sourceTree = "<group>"; };
+		69AABEBF2050BDFD00433CAE /* SyrAlertDialogue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrAlertDialogue.m; sourceTree = "<group>"; };
+		69AABEC12050C57600433CAE /* SyrViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrViewHandler.m; sourceTree = "<group>"; };
+		69AABEC32050C5AB00433CAE /* SyrViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrViewHandler.h; sourceTree = "<group>"; };
+		D229B6FA1FD12C3D004D651B /* SyrOpacityAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrOpacityAnimation.h; sourceTree = "<group>"; };
+		D229B6FB1FD12C3D004D651B /* SyrOpacityAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrOpacityAnimation.m; sourceTree = "<group>"; };
+		D229B6FE1FD12C5D004D651B /* SyrXYAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrXYAnimation.h; sourceTree = "<group>"; };
+		D229B6FF1FD12C5D004D651B /* SyrXYAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrXYAnimation.m; sourceTree = "<group>"; };
+		D229B7021FD12C77004D651B /* SyrHeightWidthAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrHeightWidthAnimation.h; sourceTree = "<group>"; };
+		D229B7031FD12C77004D651B /* SyrHeightWidthAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrHeightWidthAnimation.m; sourceTree = "<group>"; };
+		D229B7061FD12C99004D651B /* SyrRotationAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrRotationAnimation.h; sourceTree = "<group>"; };
+		D229B7071FD12C99004D651B /* SyrRotationAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrRotationAnimation.m; sourceTree = "<group>"; };
+		D229B70A1FD21352004D651B /* SyrAnimationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrAnimationDelegate.h; sourceTree = "<group>"; };
+		D229B70B1FD21352004D651B /* SyrAnimationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrAnimationDelegate.m; sourceTree = "<group>"; };
+		D24A905F1F86C2BF003DAD64 /* SyrBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyrBridge.h; sourceTree = "<group>"; };
+		D24A90601F86C2BF003DAD64 /* SyrBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyrBridge.m; sourceTree = "<group>"; };
+		D24A90631F86C841003DAD64 /* SyrRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyrRootView.h; sourceTree = "<group>"; };
+		D24A90641F86C841003DAD64 /* SyrRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyrRootView.m; sourceTree = "<group>"; };
+		D25B49801FF6BEAE0063E878 /* SyrNativeUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyrNativeUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25B49821FF6BEAE0063E878 /* SyrNativeUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrNativeUnitTests.m; sourceTree = "<group>"; };
+		D25B49841FF6BEAE0063E878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D266C4791F9AAD0700BB0A90 /* SyrComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyrComponent.h; sourceTree = "<group>"; };
+		D266C47A1F9AAD0700BB0A90 /* SyrComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyrComponent.m; sourceTree = "<group>"; };
+		D266C47D1F9AAD2000BB0A90 /* SyrText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyrText.h; sourceTree = "<group>"; };
+		D266C47E1F9AAD2000BB0A90 /* SyrText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyrText.m; sourceTree = "<group>"; };
+		D266C4941F9AB65200BB0A90 /* SyrImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyrImage.h; sourceTree = "<group>"; };
+		D266C4951F9AB65200BB0A90 /* SyrImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyrImage.m; sourceTree = "<group>"; };
+		D266C4981F9ABAE400BB0A90 /* SyrButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyrButton.h; sourceTree = "<group>"; };
+		D266C4991F9ABAE400BB0A90 /* SyrButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyrButton.m; sourceTree = "<group>"; };
+		D266C49C1F9ABE4E00BB0A90 /* SyrAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyrAnimator.h; sourceTree = "<group>"; };
+		D266C49D1F9ABE4E00BB0A90 /* SyrAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyrAnimator.m; sourceTree = "<group>"; };
+		D266C4A51F9B275E00BB0A90 /* SyrAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyrAnimatedView.h; sourceTree = "<group>"; };
+		D266C4A61F9B275E00BB0A90 /* SyrAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyrAnimatedView.m; sourceTree = "<group>"; };
+		D271B2A71FFED873004603B4 /* SyrInfoBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrInfoBox.h; sourceTree = "<group>"; };
+		D271B2A81FFED873004603B4 /* SyrInfoBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrInfoBox.m; sourceTree = "<group>"; };
+		D2968144202AC64F005EE04C /* SyrNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrNetworking.h; sourceTree = "<group>"; };
+		D2968145202AC64F005EE04C /* SyrNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrNetworking.m; sourceTree = "<group>"; };
+		D29AD66C1FA176DD00DE7CF0 /* SyrNative.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SyrNative.bundle; sourceTree = "<group>"; };
+		D29AD69F1FA536D500DE7CF0 /* SyrScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyrScrollView.h; sourceTree = "<group>"; };
+		D29AD6A01FA536D500DE7CF0 /* SyrScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyrScrollView.m; sourceTree = "<group>"; };
+		D2B1F5691FE349BF004A42EF /* SyrBundleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrBundleManager.h; sourceTree = "<group>"; };
+		D2B1F56A1FE349BF004A42EF /* SyrBundleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrBundleManager.m; sourceTree = "<group>"; };
+		D2B1F56D1FE34B17004A42EF /* SyrStyler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrStyler.h; sourceTree = "<group>"; };
+		D2B1F56E1FE34B17004A42EF /* SyrStyler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrStyler.m; sourceTree = "<group>"; };
+		D2B1F5711FE499B1004A42EF /* SyrTouchableOpacity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrTouchableOpacity.h; sourceTree = "<group>"; };
+		D2B1F5721FE499B1004A42EF /* SyrTouchableOpacity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrTouchableOpacity.m; sourceTree = "<group>"; };
+		D2CE4DF9200E8269002B7B40 /* SyrAnimatedImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrAnimatedImage.h; sourceTree = "<group>"; };
+		D2CE4DFA200E8269002B7B40 /* SyrAnimatedImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrAnimatedImage.m; sourceTree = "<group>"; };
+		D2CE4DFD200E8365002B7B40 /* SyrAnimatedText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrAnimatedText.h; sourceTree = "<group>"; };
+		D2CE4DFE200E8365002B7B40 /* SyrAnimatedText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrAnimatedText.m; sourceTree = "<group>"; };
+		D2D312281F9520AF008A9CCC /* SyrEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyrEventHandler.h; sourceTree = "<group>"; };
+		D2D312291F9520AF008A9CCC /* SyrEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyrEventHandler.m; sourceTree = "<group>"; };
+		D2D3122C1F955D18008A9CCC /* SyrView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyrView.h; sourceTree = "<group>"; };
+		D2D3122D1F955D18008A9CCC /* SyrView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyrView.m; sourceTree = "<group>"; };
+		D2D7E0301F0F672D0039C3A9 /* SyrNative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SyrNative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D7E0331F0F672D0039C3A9 /* SyrNative.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SyrNative.h; path = ../SyrNative/SyrNative.h; sourceTree = "<group>"; };
+		D2D7E0341F0F672D0039C3A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D7E0681F0F69050039C3A9 /* SyrCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyrCore.h; sourceTree = "<group>"; };
+		D2D7E0691F0F69050039C3A9 /* SyrCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyrCore.m; sourceTree = "<group>"; };
+		D2D7E07C1F11E7DD0039C3A9 /* SyrRaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyrRaster.h; sourceTree = "<group>"; };
+		D2D7E07D1F11E7DD0039C3A9 /* SyrRaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyrRaster.m; sourceTree = "<group>"; };
+		D2DE8FF51FBF608D00EEF358 /* SyrLinearGradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrLinearGradient.h; sourceTree = "<group>"; };
+		D2DE8FF61FBF608D00EEF358 /* SyrLinearGradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SyrLinearGradient.m; sourceTree = "<group>"; };
+		D2DE8FF91FC0E46B00EEF358 /* SyrStackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyrStackView.h; sourceTree = "<group>"; };
+		D2DE8FFA1FC0E46B00EEF358 /* SyrStackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyrStackView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D25B497D1FF6BEAE0063E878 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25B49851FF6BEAE0063E878 /* SyrNative.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D7E02C1F0F672D0039C3A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D229B6F91FD12C06004D651B /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				D229B6FA1FD12C3D004D651B /* SyrOpacityAnimation.h */,
+				D229B6FB1FD12C3D004D651B /* SyrOpacityAnimation.m */,
+				D229B6FE1FD12C5D004D651B /* SyrXYAnimation.h */,
+				D229B6FF1FD12C5D004D651B /* SyrXYAnimation.m */,
+				D229B7021FD12C77004D651B /* SyrHeightWidthAnimation.h */,
+				D229B7031FD12C77004D651B /* SyrHeightWidthAnimation.m */,
+				D229B7061FD12C99004D651B /* SyrRotationAnimation.h */,
+				D229B7071FD12C99004D651B /* SyrRotationAnimation.m */,
+				D229B70A1FD21352004D651B /* SyrAnimationDelegate.h */,
+				D229B70B1FD21352004D651B /* SyrAnimationDelegate.m */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		D25B49811FF6BEAE0063E878 /* SyrNativeUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D25B49821FF6BEAE0063E878 /* SyrNativeUnitTests.m */,
+				D25B49841FF6BEAE0063E878 /* Info.plist */,
+			);
+			path = SyrNativeUnitTests;
+			sourceTree = "<group>";
+		};
+		D266C4921F9AB23700BB0A90 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D2D3122C1F955D18008A9CCC /* SyrView.h */,
+				D2D3122D1F955D18008A9CCC /* SyrView.m */,
+				D266C47D1F9AAD2000BB0A90 /* SyrText.h */,
+				D266C47E1F9AAD2000BB0A90 /* SyrText.m */,
+				D266C4941F9AB65200BB0A90 /* SyrImage.h */,
+				D266C4951F9AB65200BB0A90 /* SyrImage.m */,
+				D266C4981F9ABAE400BB0A90 /* SyrButton.h */,
+				D266C4991F9ABAE400BB0A90 /* SyrButton.m */,
+				D266C4A51F9B275E00BB0A90 /* SyrAnimatedView.h */,
+				D266C4A61F9B275E00BB0A90 /* SyrAnimatedView.m */,
+				D29AD69F1FA536D500DE7CF0 /* SyrScrollView.h */,
+				D29AD6A01FA536D500DE7CF0 /* SyrScrollView.m */,
+				D2DE8FF51FBF608D00EEF358 /* SyrLinearGradient.h */,
+				D2DE8FF61FBF608D00EEF358 /* SyrLinearGradient.m */,
+				D2DE8FF91FC0E46B00EEF358 /* SyrStackView.h */,
+				D2DE8FFA1FC0E46B00EEF358 /* SyrStackView.m */,
+				D2B1F5711FE499B1004A42EF /* SyrTouchableOpacity.h */,
+				D2B1F5721FE499B1004A42EF /* SyrTouchableOpacity.m */,
+				D2CE4DF9200E8269002B7B40 /* SyrAnimatedImage.h */,
+				D2CE4DFA200E8269002B7B40 /* SyrAnimatedImage.m */,
+				D2CE4DFD200E8365002B7B40 /* SyrAnimatedText.h */,
+				D2CE4DFE200E8365002B7B40 /* SyrAnimatedText.m */,
+				69AABEBB2050772200433CAE /* SyrHapticHelper.h */,
+				69AABEBC2050774C00433CAE /* SyrHapticHelper.m */,
+				69AABEBE2050BDD400433CAE /* SyrAlertDialogue.h */,
+				69AABEBF2050BDFD00433CAE /* SyrAlertDialogue.m */,
+				42A98E1F2050632F00392721 /* SyrSwitch.h */,
+				42A98E202050634900392721 /* SyrSwitch.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		D266C4931F9AB24B00BB0A90 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D229B6F91FD12C06004D651B /* Animations */,
+				D2D7E0681F0F69050039C3A9 /* SyrCore.h */,
+				D2D7E0691F0F69050039C3A9 /* SyrCore.m */,
+				D2D7E07C1F11E7DD0039C3A9 /* SyrRaster.h */,
+				D2D7E07D1F11E7DD0039C3A9 /* SyrRaster.m */,
+				D24A905F1F86C2BF003DAD64 /* SyrBridge.h */,
+				D24A90601F86C2BF003DAD64 /* SyrBridge.m */,
+				D24A90631F86C841003DAD64 /* SyrRootView.h */,
+				D24A90641F86C841003DAD64 /* SyrRootView.m */,
+				D2D312281F9520AF008A9CCC /* SyrEventHandler.h */,
+				D2D312291F9520AF008A9CCC /* SyrEventHandler.m */,
+				D266C4791F9AAD0700BB0A90 /* SyrComponent.h */,
+				D266C47A1F9AAD0700BB0A90 /* SyrComponent.m */,
+				D266C49C1F9ABE4E00BB0A90 /* SyrAnimator.h */,
+				D266C49D1F9ABE4E00BB0A90 /* SyrAnimator.m */,
+				D2B1F5691FE349BF004A42EF /* SyrBundleManager.h */,
+				D2B1F56A1FE349BF004A42EF /* SyrBundleManager.m */,
+				D2B1F56D1FE34B17004A42EF /* SyrStyler.h */,
+				D2B1F56E1FE34B17004A42EF /* SyrStyler.m */,
+				D271B2A71FFED873004603B4 /* SyrInfoBox.h */,
+				D271B2A81FFED873004603B4 /* SyrInfoBox.m */,
+				D2968144202AC64F005EE04C /* SyrNetworking.h */,
+				D2968145202AC64F005EE04C /* SyrNetworking.m */,
+				69AABEC12050C57600433CAE /* SyrViewHandler.m */,
+				69AABEC32050C5AB00433CAE /* SyrViewHandler.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		D2D7E0261F0F672D0039C3A9 = {
+			isa = PBXGroup;
+			children = (
+				D29AD66C1FA176DD00DE7CF0 /* SyrNative.bundle */,
+				D2D7E0321F0F672D0039C3A9 /* SyrNative */,
+				D25B49811FF6BEAE0063E878 /* SyrNativeUnitTests */,
+				D2D7E0311F0F672D0039C3A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2D7E0311F0F672D0039C3A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2D7E0301F0F672D0039C3A9 /* SyrNative.framework */,
+				D25B49801FF6BEAE0063E878 /* SyrNativeUnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2D7E0321F0F672D0039C3A9 /* SyrNative */ = {
+			isa = PBXGroup;
+			children = (
+				D2D7E0341F0F672D0039C3A9 /* Info.plist */,
+				D2D7E0331F0F672D0039C3A9 /* SyrNative.h */,
+				D266C4931F9AB24B00BB0A90 /* Core */,
+				D266C4921F9AB23700BB0A90 /* Components */,
+			);
+			path = SyrNative;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2D7E02D1F0F672D0039C3A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D271B2A91FFED873004603B4 /* SyrInfoBox.h in Headers */,
+				D266C49A1F9ABAE400BB0A90 /* SyrButton.h in Headers */,
+				D2DE8FF71FBF608D00EEF358 /* SyrLinearGradient.h in Headers */,
+				D2CE4DFB200E8269002B7B40 /* SyrAnimatedImage.h in Headers */,
+				D2B1F56F1FE34B17004A42EF /* SyrStyler.h in Headers */,
+				D2D3122E1F955D18008A9CCC /* SyrView.h in Headers */,
+				D266C4A71F9B275E00BB0A90 /* SyrAnimatedView.h in Headers */,
+				D229B7001FD12C5D004D651B /* SyrXYAnimation.h in Headers */,
+				D2D7E07E1F11E7DD0039C3A9 /* SyrRaster.h in Headers */,
+				D24A90611F86C2BF003DAD64 /* SyrBridge.h in Headers */,
+				D2B1F56B1FE349BF004A42EF /* SyrBundleManager.h in Headers */,
+				D229B7041FD12C77004D651B /* SyrHeightWidthAnimation.h in Headers */,
+				D229B7081FD12C99004D651B /* SyrRotationAnimation.h in Headers */,
+				D229B6FC1FD12C3D004D651B /* SyrOpacityAnimation.h in Headers */,
+				D266C4961F9AB65200BB0A90 /* SyrImage.h in Headers */,
+				D266C47B1F9AAD0700BB0A90 /* SyrComponent.h in Headers */,
+				D266C49E1F9ABE4E00BB0A90 /* SyrAnimator.h in Headers */,
+				D2CE4DFF200E8365002B7B40 /* SyrAnimatedText.h in Headers */,
+				D2B1F5731FE499B1004A42EF /* SyrTouchableOpacity.h in Headers */,
+				D229B70C1FD21352004D651B /* SyrAnimationDelegate.h in Headers */,
+				D2D7E06A1F0F69050039C3A9 /* SyrCore.h in Headers */,
+				D266C47F1F9AAD2000BB0A90 /* SyrText.h in Headers */,
+				D2D3122A1F9520AF008A9CCC /* SyrEventHandler.h in Headers */,
+				D2DE8FFB1FC0E46B00EEF358 /* SyrStackView.h in Headers */,
+				D2968146202AC64F005EE04C /* SyrNetworking.h in Headers */,
+				D29AD6A11FA536D500DE7CF0 /* SyrScrollView.h in Headers */,
+				D2D7E0351F0F672D0039C3A9 /* SyrNative.h in Headers */,
+				D24A90651F86C841003DAD64 /* SyrRootView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D25B497F1FF6BEAE0063E878 /* SyrNativeUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D25B498A1FF6BEAE0063E878 /* Build configuration list for PBXNativeTarget "SyrNativeUnitTests" */;
+			buildPhases = (
+				D25B497C1FF6BEAE0063E878 /* Sources */,
+				D25B497D1FF6BEAE0063E878 /* Frameworks */,
+				D25B497E1FF6BEAE0063E878 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D25B49871FF6BEAE0063E878 /* PBXTargetDependency */,
+			);
+			name = SyrNativeUnitTests;
+			productName = SyrNativeUnitTests;
+			productReference = D25B49801FF6BEAE0063E878 /* SyrNativeUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2D7E02F1F0F672D0039C3A9 /* SyrNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D7E0381F0F672D0039C3A9 /* Build configuration list for PBXNativeTarget "SyrNative" */;
+			buildPhases = (
+				D2D7E02B1F0F672D0039C3A9 /* Sources */,
+				D2D7E02C1F0F672D0039C3A9 /* Frameworks */,
+				D2D7E02D1F0F672D0039C3A9 /* Headers */,
+				D2D7E02E1F0F672D0039C3A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SyrNative;
+			productName = MouseNative;
+			productReference = D2D7E0301F0F672D0039C3A9 /* SyrNative.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2D7E0271F0F672D0039C3A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Anderson,Derek";
+				TargetAttributes = {
+					D25B497F1FF6BEAE0063E878 = {
+						CreatedOnToolsVersion = 9.0.1;
+						DevelopmentTeam = 2GTL2L66E7;
+						ProvisioningStyle = Automatic;
+					};
+					D2D7E02F1F0F672D0039C3A9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = D2D7E02A1F0F672D0039C3A9 /* Build configuration list for PBXProject "SyrNative" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D2D7E0261F0F672D0039C3A9;
+			productRefGroup = D2D7E0311F0F672D0039C3A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2D7E02F1F0F672D0039C3A9 /* SyrNative */,
+				D25B497F1FF6BEAE0063E878 /* SyrNativeUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D25B497E1FF6BEAE0063E878 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D7E02E1F0F672D0039C3A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29AD66D1FA176DD00DE7CF0 /* SyrNative.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D25B497C1FF6BEAE0063E878 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25B49831FF6BEAE0063E878 /* SyrNativeUnitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D7E02B1F0F672D0039C3A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24A90661F86C841003DAD64 /* SyrRootView.m in Sources */,
+				D24A90621F86C2BF003DAD64 /* SyrBridge.m in Sources */,
+				D271B2AA1FFED873004603B4 /* SyrInfoBox.m in Sources */,
+				D2D7E06B1F0F69050039C3A9 /* SyrCore.m in Sources */,
+				D2CE4E00200E8365002B7B40 /* SyrAnimatedText.m in Sources */,
+				69AABEC22050C57600433CAE /* SyrViewHandler.m in Sources */,
+				D2DE8FF81FBF608D00EEF358 /* SyrLinearGradient.m in Sources */,
+				D2DE8FFC1FC0E46B00EEF358 /* SyrStackView.m in Sources */,
+				D2D3122B1F9520AF008A9CCC /* SyrEventHandler.m in Sources */,
+				D229B7011FD12C5D004D651B /* SyrXYAnimation.m in Sources */,
+				D266C4A81F9B275E00BB0A90 /* SyrAnimatedView.m in Sources */,
+				D229B6FD1FD12C3D004D651B /* SyrOpacityAnimation.m in Sources */,
+				D2B1F56C1FE349BF004A42EF /* SyrBundleManager.m in Sources */,
+				D2B1F5741FE499B1004A42EF /* SyrTouchableOpacity.m in Sources */,
+				D2D7E07F1F11E7DD0039C3A9 /* SyrRaster.m in Sources */,
+				D266C47C1F9AAD0700BB0A90 /* SyrComponent.m in Sources */,
+				D229B7051FD12C77004D651B /* SyrHeightWidthAnimation.m in Sources */,
+				D229B7091FD12C99004D651B /* SyrRotationAnimation.m in Sources */,
+				D266C4971F9AB65200BB0A90 /* SyrImage.m in Sources */,
+				42A98E212050634900392721 /* SyrSwitch.m in Sources */,
+				D2B1F5701FE34B17004A42EF /* SyrStyler.m in Sources */,
+				D266C4801F9AAD2000BB0A90 /* SyrText.m in Sources */,
+				D266C49B1F9ABAE400BB0A90 /* SyrButton.m in Sources */,
+				D2968147202AC64F005EE04C /* SyrNetworking.m in Sources */,
+				D2CE4DFC200E8269002B7B40 /* SyrAnimatedImage.m in Sources */,
+				D266C49F1F9ABE4E00BB0A90 /* SyrAnimator.m in Sources */,
+				D29AD6A21FA536D500DE7CF0 /* SyrScrollView.m in Sources */,
+				D229B70D1FD21352004D651B /* SyrAnimationDelegate.m in Sources */,
+				69AABEC02050BDFD00433CAE /* SyrAlertDialogue.m in Sources */,
+				D2D3122F1F955D18008A9CCC /* SyrView.m in Sources */,
+				69AABEBD2050774C00433CAE /* SyrHapticHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D25B49871FF6BEAE0063E878 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2D7E02F1F0F672D0039C3A9 /* SyrNative */;
+			targetProxy = D25B49861FF6BEAE0063E878 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D25B49881FF6BEAE0063E878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GTL2L66E7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SyrNativeUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PayPal.SyrNativeUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D25B49891FF6BEAE0063E878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GTL2L66E7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SyrNativeUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PayPal.SyrNativeUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2D7E0361F0F672D0039C3A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D2D7E0371F0F672D0039C3A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D2D7E0391F0F672D0039C3A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SyrNative/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = PayPal.MouseNative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D2D7E03A1F0F672D0039C3A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SyrNative/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = PayPal.MouseNative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D25B498A1FF6BEAE0063E878 /* Build configuration list for PBXNativeTarget "SyrNativeUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25B49881FF6BEAE0063E878 /* Debug */,
+				D25B49891FF6BEAE0063E878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D7E02A1F0F672D0039C3A9 /* Build configuration list for PBXProject "SyrNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D7E0361F0F672D0039C3A9 /* Debug */,
+				D2D7E0371F0F672D0039C3A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D7E0381F0F672D0039C3A9 /* Build configuration list for PBXNativeTarget "SyrNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D7E0391F0F672D0039C3A9 /* Debug */,
+				D2D7E03A1F0F672D0039C3A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2D7E0271F0F672D0039C3A9 /* Project object */;
+}
